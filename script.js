@@ -1,6 +1,6 @@
 let container = document.getElementById("container");
-let div = document.createElement("div");
 for (let i = 0; i < 16; i++) {
-    container.appendChild(div);
+    let square = document.createElement("div");
+    square.classList.add("square");
+    container.appendChild(square);
 }
-
