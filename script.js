@@ -1,5 +1,6 @@
 let container = document.getElementById("container");
-let percents = [100, 50, 33.33, 25, 20, 16.66, 14.28, 12.5, 11.11, 10];
+let percents = Array.from({length: 100}, (_, i) => 100 / (i+1));
+console.log(percents);
 let chooseAmountBtn = document.getElementById("new-squares-amount-btn");
 chooseAmountBtn.addEventListener("click", e => {
     e.target.remove();
@@ -12,7 +13,7 @@ chooseAmountBtn.addEventListener("click", e => {
         square.addEventListener("mouseenter", e => {
             e.target.style.backgroundColor = "black";
         });
-        for (let i = 0; i < 11; i++) {
+        for (let i = 0; i < 101; i++) {
         if (chosenAmount === i) {
             square.style.flex = `0 0 ${percents[i - 1]}%`;
             square.style.height = `${percents[i - 1]}%`;
