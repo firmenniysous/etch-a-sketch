@@ -13,7 +13,7 @@ body {
 }
 
 .square {
-    border: solid black 1px;
+    border: solid grey 1px;
     width: 30px;
     height: 30px;
     flex: 0 0 25%;
