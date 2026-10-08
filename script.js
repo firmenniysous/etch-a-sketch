@@ -17,7 +17,10 @@ chooseAmountBtn.addEventListener("click", e => {
         square.classList.add("square");
         container.appendChild(square);
         square.addEventListener("mouseenter", e => {
-            e.target.style.backgroundColor = "black";
+            let a = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            let c = Math.floor(Math.random() * 256);
+            e.target.style.backgroundColor = `rgb(${a}, ${b}, ${c})`;
         });
         for (let i = 0; i < 101; i++) {
         if (chosenAmount === i) {
