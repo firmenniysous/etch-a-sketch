@@ -3,11 +3,12 @@ let container = document.getElementById("container");
 let borderOfContainer = document.getElementById("border-of-container");
 let percents = Array.from({length: 100}, (_, i) => 100 / (i+1));
 let chooseAmountBtn = document.getElementById("new-squares-amount-btn");
+let chosenAmount = 0;
 
-chooseAmountBtn.addEventListener("click", e => {
-    let chosenAmount = Number(prompt("What will be the width of squares? (Choose between 1 and 100)"));
-    let amountOfSquares = chosenAmount * chosenAmount;
-    if (chosenAmount > 100) {
+function squareGeneration(chosenAmount) {
+chosenAmount = Number(prompt("cmon"));
+let amountOfSquares = chosenAmount * chosenAmount;
+if (chosenAmount > 100) {
         let alertMessage = alert("You have to choose between 1 and 100");
         body.removeChild(container);
     } else {
@@ -33,12 +34,8 @@ chooseAmountBtn.addEventListener("click", e => {
     }
     }
     };
-})
+}
 
-
-
-
-
-
-
-
+chooseAmountBtn.addEventListener("click", e => {
+    squareGeneration();
+});
