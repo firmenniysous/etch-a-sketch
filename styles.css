@@ -3,6 +3,14 @@ body {
     padding: 0;
 }
 
+
+#border-of-container {
+    width: 501px;
+    height: 501px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
 #container {
     display: flex;
     width:  500px;
@@ -12,8 +20,9 @@ body {
     padding: 0;
 }
 
+
 .square {
-    border: solid grey 1px;
+    border: solid white 1px;
     width: 30px;
     height: 30px;
     flex: 0 0 25%;

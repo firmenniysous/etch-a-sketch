@@ -1,5 +1,6 @@
 let body = document.querySelector("body");
 let container = document.getElementById("container");
+let borderOfContainer = document.getElementById("border-of-container");
 let percents = Array.from({length: 100}, (_, i) => 100 / (i+1));
 let chooseAmountBtn = document.getElementById("new-squares-amount-btn");
 
@@ -10,8 +11,7 @@ chooseAmountBtn.addEventListener("click", e => {
         let alertMessage = alert("You have to choose between 1 and 100");
         body.removeChild(container);
     } else {
-    body.removeChild(chooseAmountBtn);
-    body.appendChild(container);
+    borderOfContainer.appendChild(container);
     for (let i = 0; i < amountOfSquares; i++) {
         let square = document.createElement("div");
         square.classList.add("square");
@@ -23,6 +23,7 @@ chooseAmountBtn.addEventListener("click", e => {
             let c = Math.floor(Math.random() * 256);
             transparency = transparency + 0.1;
             e.target.style.backgroundColor = `rgba(${a}, ${b}, ${c}, ${transparency})`;
+            e.target.style.borderColor = `rgba(${a}, ${b}, ${c}, ${transparency})`
         });
         for (let i = 0; i < 101; i++) {
         if (chosenAmount === i) {
