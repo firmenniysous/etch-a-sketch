@@ -9,9 +9,8 @@ chooseAmountBtn.addEventListener("click", e => {
     let amountOfSquares = chosenAmount * chosenAmount;
     if (chosenAmount > 100) {
         let alertMessage = alert("You have to choose between 1 and 100");
-        body.removeChild(container);
     } else {
-    borderOfContainer.appendChild(container);
+        container.replaceChildren();
     for (let i = 0; i < amountOfSquares; i++) {
         let square = document.createElement("div");
         square.classList.add("square");
