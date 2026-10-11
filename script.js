@@ -7,7 +7,7 @@ let chooseAmountBtn = document.getElementById("new-squares-amount-btn");
 chooseAmountBtn.addEventListener("click", e => {
     let chosenAmount = Number(prompt("What will be the width of squares? (Choose between 1 and 100)"));
     let amountOfSquares = chosenAmount * chosenAmount;
-    if (chosenAmount > 100) {
+    if (chosenAmount > 100 || chosenAmount < 1) {
         let alertMessage = alert("You have to choose between 1 and 100");
     } else {
         container.replaceChildren();
@@ -32,4 +32,11 @@ chooseAmountBtn.addEventListener("click", e => {
     }
     }
     };
+    body.appendChild(e.target);
+    e.target.style.width = "209px";
+    e.target.style.height = "36px";
+    e.target.style.fontSize = "14px";
+    e.target.textContent = "Choose another amount";
+    e.target.style.margin = "8px";
+    e.target.style.borderRadius = "3px";
 })
