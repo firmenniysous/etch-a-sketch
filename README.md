@@ -10,3 +10,7 @@ A simple Etch-a-Sketch project built with HTML, CSS, and JavaScript.
 * Simple and responsive interface
 
 This project was created as part of my JavaScript practice.
+
+# Background image
+
+![An artistic bokeh effect of colorful city lights creating a soft, dreamy atmosphere.](https://www.pexels.com/photo/bokeh-photography-544917/)
