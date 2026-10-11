@@ -11,6 +11,13 @@ chooseAmountBtn.addEventListener("click", e => {
         let alertMessage = alert("You have to choose between 1 and 100");
     } else {
         container.replaceChildren();
+        body.appendChild(e.target);
+        e.target.style.width = "209px";
+        e.target.style.height = "36px";
+        e.target.style.fontSize = "14px";
+        e.target.textContent = "Choose another amount";
+        e.target.style.margin = "8px";
+        e.target.style.borderRadius = "3px";
     for (let i = 0; i < amountOfSquares; i++) {
         let square = document.createElement("div");
         square.classList.add("square");
@@ -32,11 +39,4 @@ chooseAmountBtn.addEventListener("click", e => {
     }
     }
     };
-    body.appendChild(e.target);
-    e.target.style.width = "209px";
-    e.target.style.height = "36px";
-    e.target.style.fontSize = "14px";
-    e.target.textContent = "Choose another amount";
-    e.target.style.margin = "8px";
-    e.target.style.borderRadius = "3px";
 })
