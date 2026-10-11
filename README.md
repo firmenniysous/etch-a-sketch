@@ -13,4 +13,4 @@ This project was created as part of my JavaScript practice.
 
 # Background image
 
-![An artistic bokeh effect of colorful city lights creating a soft, dreamy atmosphere.](https://www.pexels.com/photo/bokeh-photography-544917/)
+![An artistic bokeh effect of colorful city lights creating a soft, dreamy atmosphere.](images/pexels-zhuhehuai-544917.jpg)
